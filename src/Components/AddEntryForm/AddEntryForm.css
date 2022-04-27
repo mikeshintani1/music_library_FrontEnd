@@ -1,7 +1,15 @@
-.form-grid{
-    display: grid;
-}
+
 
 .add_btn{
     font-size: large;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 0%;
+}
+
+.form-grid{
+    display: flex;
 }
