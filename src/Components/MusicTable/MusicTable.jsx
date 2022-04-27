@@ -3,7 +3,7 @@ import './MusicTable.css'
 
 const MusicTable = (props) => {
     
-    console.log(props.cars)
+    console.log(props.parentMusicTable)
 
 
     return(
@@ -21,6 +21,20 @@ const MusicTable = (props) => {
                     <th scope="col" className='genre-col'>Genre</th>
                     </tr>
                 </thead>
+            </tbody>
+            <tbody>
+                {props.parentMusicTable.map((songs, index) => {
+                    return(
+                        <tr key={index}>
+                        <td>{index+1}</td>
+                        <td>{songs.title}</td>
+                        <td>{songs.artist}</td>    
+                        <td>{songs.album}</td>
+                        <td>{songs.release_date}</td>
+                        <td>{songs.genre}</td>   
+                        </tr>
+                    )
+                })}
             </tbody>
         </table>
 

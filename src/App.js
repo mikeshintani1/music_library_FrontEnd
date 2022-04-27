@@ -22,6 +22,7 @@ function App() {
       console.log('Error in getAllSongs API call!');
     
     }
+  }
   async function createSong(newSong){
     // newSong:
     // {
@@ -36,6 +37,9 @@ function App() {
       await getAllSongs();
     }
 
+    
+  
+
   }
 
   return(
@@ -45,13 +49,14 @@ function App() {
       <button className ='getAllSongs' onClick = {getAllSongs}>Get All Songs!</button>
     </div>
       <div className='row-posts'>
-        <MusicTable parentMusicTable = {songs.map}/>
-      <div>
+        <MusicTable parentMusicTable = {songs}/>
+      </div>  
+      <div class name='row-createSong'>
         <AddEntryForm addNewSongProperty = {createSong}/>
         </div>
-      </div>
+      
     </div>
     );
-  }
+  
 }
 export default App;

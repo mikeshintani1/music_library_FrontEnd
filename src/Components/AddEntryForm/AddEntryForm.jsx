@@ -29,7 +29,7 @@ const AddEntryForm = (props) => {
         <form onSubmit={handleSubmit} className='form-grid'>
             <div className='form-group'>
                 <label>Title</label>
-                <input type='text' className='form-control' value={title} onChange={(event) => setTitle(parseFloat(event.target.value))}/>
+                <input type='text' className='form-control' value={title} onChange={(event) => setTitle(event.target.value)}/>
             </div>
             <div className='form-group'>
                 <label>Artist</label>
