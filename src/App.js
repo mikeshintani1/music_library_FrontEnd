@@ -13,6 +13,7 @@ function App() {
     getAllSongs();
   }, [])
 
+  
   async function getAllSongs(){
     try{
       let response = await axios.get('http://127.0.0.1:8000/api/songs/');
@@ -23,18 +24,14 @@ function App() {
     
     }
   }
+
   async function createSong(newSong){
-    // newSong:
-    // {
-    //   title: "TEST SONG",
-    //   album: "TEST ALBUM",
-    //   artist: "TEST ART",
-    //   genre: "TEST GENRE",
-    //   releaseDate: "11/11/1111",
-    // }
+
+
     let response = await axios.post('http://127.0.0.1:8000/api/songs/', newSong);
     if(response.status === 201){
       await getAllSongs();
+      // then((response) => setPost(response.data))
     }
 
     
@@ -51,7 +48,7 @@ function App() {
         <MusicTable parentMusicTable = {songs}/>
       </div>  
       <div class name='row-createSong'>
-        <AddEntryForm addNewSongProperty = {createSong}/>
+        <AddEntryForm addNewSong = {createSong}/>
         </div>
       
     </div>

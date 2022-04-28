@@ -8,7 +8,7 @@ const MusicTable = (props) => {
     return(
         <div>
         
-        <table className="table" chartType='Table'>
+        <table className = "table" charttype = 'table'>
                 <thead>
                     <tr>
                     <th scope="col" className ="title-col">Title</th>
@@ -19,11 +19,10 @@ const MusicTable = (props) => {
                     </tr>
                 </thead>
             <tbody>
-                {props.parentMusicTable.map((songs, index) => {
+                {props.parentMusicTable.map((songs) => {
                     return(
-                        <tr key={index}>
-                        <td>{index+1}</td>
-                        <td>{songs.Title}</td>
+                        <tr>
+                        <td>{songs.title}</td>
                         <td>{songs.artist}</td>    
                         <td>{songs.album}</td>
                         <td>{songs.release_date}</td>
