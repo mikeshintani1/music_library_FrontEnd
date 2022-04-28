@@ -4,7 +4,7 @@
     font: optional;
     width: 20%;
     text-align: middle;
-    padding-right: 60px;
+    padding-right: 120px;
 
 }
 
@@ -13,28 +13,28 @@
     width: 20%;
     text-align: middle;
 
-    padding-right: 60px;
+    padding-right: 160px;
 }
 
 .album-col{
     font: optional;
     width: 20%;
     text-align: middle;
-    padding-right: 60px;
+    padding-right: 160px;
 }
 
 .artist-col{
     font: optional;
     width: 20%;
     text-align: middle;
-    padding-right: 70px;
+    padding-right: 160px;
 }
 
 .title-col{
     font: optional;
     width: 20%;
     text-align: middle;
-    padding-right: 60px;
+    padding-right: 120px;
 }
 
 .table{
