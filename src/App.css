@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(240, 56, 56);
 }
 
 .App-link {
@@ -38,7 +38,7 @@
 }
 
 .getAllSongs{
-  
+  margin-left: 625px;
 }
 
 .row-createSong{
@@ -48,4 +48,11 @@
 .header_one{
   display: flex;
   margin-inline: 591px;
+  color: rgb(207, 72, 10);
+  background-color: rgb(245, 146, 146);
+  width: 100%;
+}
+
+.backgroundall{
+  background-color: rgb(245, 146, 146);
 }

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import MusicTable from './Components/MusicTable/MusicTable';
 import AddEntryForm from './Components/AddEntryForm/AddEntryForm';
 import FilterBar from './Components/SearchBar/SearchBar';
-
+import Header from './Components/ImageFolder/image';
 
 function App() {
 
@@ -40,7 +40,7 @@ function App() {
   }
 
   return(
-    <div>
+    <div className='backgroundall'>
       <h1 className='header_one'>Music Library</h1>
       <div>
       <button className ='getAllSongs' onClick = {getAllSongs}>Get All Songs!</button>
@@ -54,6 +54,7 @@ function App() {
         <div>
           <FilterBar songs = {songs} setSongs = {setSongs}/>
         </div>
+        <Header />
     </div>
     );
   

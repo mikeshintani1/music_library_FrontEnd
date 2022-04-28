@@ -1,6 +1,6 @@
 /* Dropdown Button */
 .filterBar {
-    background-color: #04AA6D;
+    background-color: #02bd78;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -8,4 +8,10 @@
     cursor: pointer;
   }
   
- 
+ .findsong{
+     margin-left: 0px;
+ }
+
+ .songfilter{
+     margin-left: 500px
+ }

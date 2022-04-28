@@ -40,12 +40,13 @@ return (
         <form onSubmit={filterBar}>
         <div>
             <input
+                className='songfilter'
                 type="text"
                 value={songFilter}
                 onChange={(e) =>  setSongFilter(e.target.value)}
                 placeholder="Find Your Song!"
                 />{" "}
-                <button type="submit">FIND SONG</button>
+                <button className='findsong' type="submit">FIND SONG</button>
         </div>
         </form>
     </div>
