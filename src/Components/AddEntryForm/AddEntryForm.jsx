@@ -28,7 +28,7 @@ const AddEntryForm = (props) => {
 
     return (
         <form onSubmit={handleSubmit} className='form-grid'>
-            
+            <h3 className='h3-css'>Add New Song!</h3>
             <div className='form-group'>
                 <label className='label-group'>Title</label>
                 <input type='text' className='form-control' value={title} onChange={(event) => settitle(event.target.value)}/>

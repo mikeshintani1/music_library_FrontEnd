@@ -3,6 +3,7 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import MusicTable from './Components/MusicTable/MusicTable';
 import AddEntryForm from './Components/AddEntryForm/AddEntryForm';
+import FilterBar from './Components/SearchBar/SearchBar';
 
 
 function App() {
@@ -50,7 +51,9 @@ function App() {
       <div class name='row-createSong'>
         <AddEntryForm addNewSong = {createSong}/>
         </div>
-      
+        <div>
+          <FilterBar songs = {songs} setSongs = {setSongs}/>
+        </div>
     </div>
     );
   
