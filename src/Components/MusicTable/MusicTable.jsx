@@ -3,12 +3,11 @@ import './MusicTable.css'
 
 const MusicTable = (props) => {
     
-    console.log(props.parentMusicTable)
-
+    console.log(props.parentMusicTable);
 
     return(
         <div>
-            <h2>MUSIC</h2>
+        
         <table className="table" chartType='Table'>
                 <thead>
                     <tr>

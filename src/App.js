@@ -17,7 +17,7 @@ function App() {
     try{
       let response = await axios.get('http://127.0.0.1:8000/api/songs/');
       console.log(response.data);
-
+      setSongs(response.data)
     } catch (ex) {
       console.log('Error in getAllSongs API call!');
     

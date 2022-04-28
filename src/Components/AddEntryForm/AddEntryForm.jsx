@@ -13,7 +13,7 @@ const AddEntryForm = (props) => {
 
     function handleSubmit(event) {
         event.preventDefault();
-        let song = {
+        let newSong = {
             title: title,
             artist: artist,
             album: album,
@@ -21,8 +21,8 @@ const AddEntryForm = (props) => {
             release: release,
 
         };
-        console.log(song);
-        props.addNewSongProperty(song);
+        console.log(newSong);
+        props.addNewSongProperty(newSong);
     }
 
     return (  
@@ -47,7 +47,7 @@ const AddEntryForm = (props) => {
                 <label>Release Date</label>
                 <input type='text' className='form-control' value={release} onChange={(event) => setRelease(event.target.value)}/>
             </div>
-                <button type='submit' className="add_btn" style={{'margin-top': '1em'}}>Add</button>
+                <button type='submit' className="add_btn" style={{'marginTop': '1em'}}>Add</button>
         </form>
     );
 }
