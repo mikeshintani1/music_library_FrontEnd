@@ -44,3 +44,8 @@
 .row-createSong{
 
 }
+
+.header_one{
+  display: flex;
+  margin-inline: 591px;
+}

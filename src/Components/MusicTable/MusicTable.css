@@ -2,21 +2,43 @@
 
 .release-col{
     font: optional;
+    width: 20%;
+    text-align: middle;
+    padding-right: 60px;
 
 }
 
 .genre-col{
     font: optional;
+    width: 20%;
+    text-align: middle;
+
+    padding-right: 60px;
 }
 
 .album-col{
     font: optional;
+    width: 20%;
+    text-align: middle;
+    padding-right: 60px;
 }
 
 .artist-col{
     font: optional;
+    width: 20%;
+    text-align: middle;
+    padding-right: 70px;
 }
 
 .title-col{
     font: optional;
+    width: 20%;
+    text-align: middle;
+    padding-right: 60px;
+}
+
+.table{
+    width: 100%;
+    text-align: middle;
+    padding-left: 40px;
 }

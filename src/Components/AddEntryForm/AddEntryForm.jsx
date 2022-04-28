@@ -26,26 +26,27 @@ const AddEntryForm = (props) => {
         props.addNewSong(addNewSong);
     }
 
-    return (  
+    return (
         <form onSubmit={handleSubmit} className='form-grid'>
+            
             <div className='form-group'>
-                <label>Title</label>
+                <label className='label-group'>Title</label>
                 <input type='text' className='form-control' value={title} onChange={(event) => settitle(event.target.value)}/>
             </div>
             <div className='form-group'>
-                <label>Artist</label>
+                <label className='label-group'>Artist</label>
                 <input type='text' className='form-control' value={artist} onChange={(event) => setArtist(event.target.value)}/>
             </div>
             <div className='form-group'>
-                <label>Album</label>
+                <label className='label-group'>Album</label>
                 <input type='text' className='form-control' value={album} onChange={(event) => setAlbum(event.target.value)}/>
             </div>
             <div className='form-group'>
-                <label>Release Date</label>
+                <label className='label-group'>Release Date</label>
                 <input type='yyyy-mm-dd' className='form-control' value={release_date} onChange={(event) => setRelease(event.target.value)}/>
             </div>
             <div className='form-group'>
-                <label>Genre</label>
+                <label className='label-group'>Genre</label>
                 <input type='text' className='form-control' value={genre} onChange={(event) => setGenre(event.target.value)}/>
             </div>
 
